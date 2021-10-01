@@ -54,7 +54,7 @@
 
 <section class="home" id="home">
   <div class="content">
-      <h3>Begin your selling journey on Amazon</h3>
+      <h3>Begin your selling journey on <span>Amazon</span></h3>
       <p>Sell your products to the crores of customers across India</p> 
       <div class="btn">
         <button type="button" class="btn btn-warning badge rounded-pill" btn-lg style="height: 45px; width: 140px"><span>Start Selling</span></button>
@@ -182,10 +182,41 @@
      <a href="#"<i class="fab fa-snapchat"></i></a>
    </div>
  <p class="copyright">
-  <marquee> ErrorGaint@2021 All Right Reserved</marquee>
+   ErrorGaint@2021 All Right Reserved
  </p>
 
+ <style>
+  body {
+    background: #000;
+    color: #fff;
+  }
   
+  /* ANIMATION */
+  @keyframes flash {
+    from {
+      text-shadow: 
+        0 0 5px #fc0303,
+        0 0 10px #fc0303,
+        0 0 20px #fc0303,
+        0 0 40px #fc0303;
+    }
+    to {
+      text-shadow: 
+        0 0 5px #03cafc,
+        0 0 10px #03cafc,
+        0 0 20px #03cafc,
+        0 0 40px #03cafc;
+    }
+  }
+  
+  /* ATTACH ANIMATION */
+ .content h3 span{
+    /* KEYFRAMES DURATION FUNCTION REPEAT DIRECTION */
+    animation: flash 0.7s ease infinite alternate;
+  }
+  </style>
+  
+
   </footer>
   
   
